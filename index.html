@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One draw</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <article class="site-container">
+        <header style="display: flex; justify-content: center;">
+            <svg id="iconMain" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.76 103.9" style="width: 40px; margin-right: 10px;">
+                <path class="cls-1" stroke-width="0" fill="#171717" d="M81.01,0H27.75C12.43,0,0,12.42,0,27.75v48.4c0,15.33,12.43,27.75,27.75,27.75h53.26c15.33,0,27.75-12.42,27.75-27.75V27.75c0-15.33-12.42-27.75-27.75-27.75ZM71.92,70.48c-23.66,22.24-50.1,32.54-59.07,23-8.96-9.54,2.95-35.3,26.6-57.54C63.11,13.7,89.55,3.4,98.51,12.94c8.97,9.53-2.94,35.29-26.59,57.53Z"/>
+            </svg>
+            <h1>Onedraw</h1>
+        </header>
+    
+        <main>
+            <div class="prompt-container">
+                <div id="prompt">Loading...</div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="input-container">
+                <div id="dayInput">
+                    <label for="latestDay">Enter the day you want to start with:</label>
+                    <input type="number" id="latestDay" min="0" max="364">
+                    <button class="button" onclick="saveDay()">Submit</button>
+                </div>
+            </div>
+        </footer>
+    </article>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
