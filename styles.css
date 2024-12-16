@@ -47,12 +47,14 @@ h1 {
     width: 100vw;
     height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #prompt {
-    font-size: 10vw;
+    font-size: clamp(2rem, 20vw, 5rem);
+    text-align: center;
 }
 
 .input-container {
@@ -62,14 +64,14 @@ h1 {
 
 #latestDay {
     width: 100px;
-    padding: 15px 30px;
+    padding: 10px 30px;
     background-color: transparent;
     border-radius: 10px;
     border: 1px solid var(--color-1);
 }
 
 .button {
-    padding: 15px 30px;
+    padding: 10px 30px;
     background-color: transparent;
     border-radius: 10px;
     border: 1px solid var(--color-1);

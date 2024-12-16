@@ -17,15 +17,18 @@
         <main>
             <div class="prompt-container">
                 <div id="prompt">Loading...</div>
+                <button class="button" onclick="getRandom()">Ger random</button>
             </div>
         </main>
         
         <footer>
             <div class="input-container">
-                <div id="dayInput">
-                    <label for="latestDay">Enter the day you want to start with:</label>
-                    <input type="number" id="latestDay" min="0" max="364">
-                    <button class="button" onclick="saveDay()">Submit</button>
+                <div id="dayInput" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+                    <label for="latestDay" style="display: inline-block; margin: 10px;">Enter the day you want to start with:</label>
+                    <div>
+                        <input type="number" id="latestDay" min="0" max="364">
+                        <button class="button" onclick="saveDay()">Submit</button>
+                    </div>
                 </div>
             </div>
         </footer>
