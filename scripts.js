@@ -403,7 +403,6 @@ function saveDay() {
 
 function getRandom() {
     const random = Math.floor(Math.random() * 366);
-    console.log(drawingPrompts[245])
     promptElement.textContent = drawingPrompts[random];
 }
 
